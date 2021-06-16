@@ -1,0 +1,29 @@
+version: "2.0"
+stories:
+- story: happy info path
+  steps:
+  - intent: more_info
+  - action: utter_info
+  - action: utter_what_do_you_have
+  - intent: admission_order
+  - action: utter_order_name
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_time
+  - action: utter_assistant
+  - action: utter_botgreet
+  - intent: mood_great
+  - action: utter_happy
+- story: admission path
+  steps:
+  - intent: deny
+  - action: admission_form
+  - active_loop: admission_form
+  - active_loop: null
+  - action: utter_slots_values
+  - action: utter_ask_confirmation
+  - intent: thankyou
+  - action: utter_goodbye
+
+

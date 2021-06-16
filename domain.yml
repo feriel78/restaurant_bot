@@ -1,0 +1,61 @@
+version: '2.0'
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- more_info
+- name_entry
+- phone_entry
+- address_entry
+- admission_order
+- thankyou
+entities:
+- order
+- name
+- phone
+- address
+slots:
+  name:
+   type: unfeaturized
+  phone:
+   type: unfeaturized
+  address: 
+   type: unfeaturized
+responses:
+  utter_info:
+  - text: "Here are the meals for today's order:"
+    image: https://i.pinimg.com/564x/2f/5f/76/2f5f761b635ee59a5c69cecae42e711e.jpg 
+  utter_botgreet:
+  - text: How can i help you sir?
+  utter_assistant:
+  - text: With our assistant ,you can order food with just a few taps 🖱️
+  utter_time:
+  - text: The restaurant is open from 7am to 4pm and 7pm to 12pm.
+  utter_what_do_you_have:
+  - text: What would you like to order?
+  utter_order_name:
+  - text: Great choice! Would you like to add something 🥤🍟?
+  utter_ask_name:
+  - text: Got it.Just need your info and we are done 📝. What's your first and last name ? 
+  utter_ask_address:
+  - text: Finally, the delivery address ? 
+  utter_ask_phone:
+  - text: Please enter your phone number ?
+  utter_ask_confirmation:
+  - text: You'll get a confirmation call in just a moment ⏰ !
+  utter_submit:
+  - text: All done!
+  utter_happy:
+  - text: Great, carry on!
+  utter_slots_values:
+  - text: "Your order is placed !\n
+           - Name: {name}\n
+           - Phone: {phone}\n
+           - Street Address: {address}"
+  utter_goodbye:
+  - text: Bye
+forms:
+ - admission_form
+e2e_actions: []
+

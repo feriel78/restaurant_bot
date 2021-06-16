@@ -1,0 +1,81 @@
+version: "2.0"
+nlu:
+- intent: admission_order
+  examples: |
+    - I want a double [cheeseburger]{"entity": "order", "value": "cheeseburger"}with caramelized onions
+    - I want to eat a [chicken burger]{"entity": "order", "value": "chicken burger"}
+    - I want to order 2 bottles of [Coca Cola]{"entity": "order", "value": "Coca Cola"}
+    - I Want 4 [Fried chickens]{"entity": "order", "value": "Fried chickens"}
+    - I want to order a [pizza]{"entity": "order", "value": "pizza"}
+    - I want green [salad]{"entity": "order", "value": "salad"}  
+- intent: name_entry
+  examples: |
+    - my name is [Feriel Ben Hassine](name)
+    - my name is [Feriel](name)
+    - my name is [Feriel hmad](name)
+- intent: address_entry
+  examples: |
+    - My address is [Street Tarek ben Zied Moknine](address)
+    - Street [Tarek ben Zied Moknine](address)
+    - My location is [Tarek ben ziad](address)
+- intent: phone_entry
+  examples: |
+    - [25929442](phone)
+    - [25929442](phone)
+    - [25929442](phone)
+    - phone in [25929442](phone)
+    - phone in [25929442](phone)
+- intent: more_info
+  examples: |
+    - Tell me something good to eat 
+    - what can i get here?
+    - what can i have to eat?
+    - what is this place famous for ?  
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - good by
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - I don't think so
+    - don't like that
+    - not really
+    - no don't think so
+    - it's ok thanks
+- intent: thankyou
+  examples: |
+    - thanks
+    - thanks a lot
+    - thank you 
+
+   
+    
